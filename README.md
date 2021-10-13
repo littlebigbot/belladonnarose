@@ -1,3 +1,3 @@
-# nothing is holy but every thing is sacred
+# no thing is holy but every thing is sacred
 
 this is an experiment.
