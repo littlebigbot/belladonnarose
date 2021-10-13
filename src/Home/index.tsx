@@ -1,10 +1,14 @@
 import * as React from 'react';
+
+import Rose from './sections/Rose';
 import './index.css';
 
 function Home() {
   return (
     <div className="Home">
-      Home
+
+      <Rose/>
+
     </div>
   );
 }
