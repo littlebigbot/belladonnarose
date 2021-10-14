@@ -19,8 +19,8 @@ function Rose() {
   const [bxllxdxnnxIndex, setBxllxdxnnxIndex] = React.useState(0);
   const [outputRose, setOutputRose] = React.useState(ROSE);
   const [hasUserInput/*, setHasUserInput*/] = React.useState(false);
-  const [updateInterval/*, setUpdateInterval*/] = React.useState(INITIAL_UPDATE_INTERVAL);
-  const [isMutating, setIsMutating] = React.useState(true);
+  const [updateInterval, setUpdateInterval] = React.useState(INITIAL_UPDATE_INTERVAL);
+  const [isMutating/*, setIsMutating*/] = React.useState(true);
 
   // React.useEffect(() => {
   //   const onInput = () => {
