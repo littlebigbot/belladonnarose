@@ -1,13 +1,14 @@
 .Home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: flex-end;*/
+  /*align-items: center;*/
   height: 100%;
+  position: relative;
 }
 
 .Home > *  {
-  border: 1px dashed;
+  /*border: 1px dashed;*/
   width: 80vw;
 }
 

@@ -1,9 +1,10 @@
 {
   "name": "bxllxdxnnx",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "homepage": "https://bxllxdxnnx.com",
   "dependencies": {
+    "@fontsource/anonymous-pro": "^4.5.0",
     "@types/node": "^16.10.5",
     "@types/react": "^17.0.29",
     "@types/react-dom": "^17.0.9",
