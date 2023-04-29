@@ -1,0 +1,22 @@
+.Rose {
+  white-space: pre;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 3.5s ease-in-out;
+}
+
+.Rose.interacted {
+  color: #15161d;
+}
+
+.Rose.interacted span {
+  color: rgba(215, 46, 162, 0.94);
+}
+
+/* background: rgb(21, 22, 29); */
+/* color: rgba(215,46,162,0.94); */
+
+/*# sourceMappingURL=index.css.map */

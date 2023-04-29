@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: "Anonymous Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #15161d;
-  color: rgba(215, 46, 162, 0.94);
+  background: rgb(21 22 29);
+  color: rgb(215 46 162 / 94%);
   border: 5px solid;
+
   /* animation: borderPulse 1.2s infinite; */
   overflow: hidden;
   font-weight: bold;
@@ -15,13 +16,16 @@ body {
   0% {
     border: 3px solid;
   }
+
   50% {
     border: 6px solid;
   }
+
   100% {
     border: 3px solid;
   }
 }
+
 html,
 body,
 #root {
@@ -37,5 +41,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-/*# sourceMappingURL=index.css.map */

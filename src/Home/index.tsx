@@ -1,14 +1,12 @@
 import * as React from 'react';
 
-import Rose from './sections/Rose';
-import './index.css';
+import Rose from './vignettes/Rose';
+import './index.scss';
 
-function Home() {
+function Home(): React.ReactElement {
   return (
     <div className="Home">
-
-      <Rose/>
-
+      <Rose />
     </div>
   );
 }

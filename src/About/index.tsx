@@ -1,12 +1,8 @@
 import * as React from 'react';
-import './index.css';
+import './index.scss';
 
-function About() {
-  return (
-    <div className="About">
-      About
-    </div>
-  );
+function About(): React.ReactElement {
+  return <div className="About">About</div>;
 }
 
 export default About;

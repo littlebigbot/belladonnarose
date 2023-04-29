@@ -36,7 +36,7 @@ export const STEM = `                        :
 export const NEWLINE = `
 `;
 
-export const INITIAL_UPDATE_INTERVAL = 600;
+export const INITIAL_UPDATE_INTERVAL = 400;
 
 export const BXLLXDXNNX = 'bxllxdxnnx';
 
