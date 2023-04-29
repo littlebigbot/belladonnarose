@@ -1,3 +1,3 @@
-# no thing is holy but every thing is sacred
+# hello, and welcome to another exciting episode
 
 this is an experiment.
