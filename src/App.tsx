@@ -2,6 +2,7 @@ import * as React from 'react';
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Resume from './Resume';
 import './App.scss';
 
 function App(): React.ReactElement {
@@ -11,6 +12,7 @@ function App(): React.ReactElement {
         <header className="menu">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
+          <Link to="/resume">Resume</Link>
         </header>
 
         <Switch>
@@ -19,6 +21,9 @@ function App(): React.ReactElement {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
         </Switch>
       </div>
