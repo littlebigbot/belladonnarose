@@ -12,7 +12,7 @@ export const useInterval = (callback: () => unknown, delay: number): void => {
   // Set up the interval.
   React.useEffect(() => {
     function tick() {
-      savedCallback?.current();
+      savedCallback?.current?.();
     }
     if (delay !== null) {
       const id = setInterval(tick, delay);
@@ -161,7 +161,7 @@ export const useEventListener = (
       const isSupported = element && element.addEventListener;
       if (!isSupported) return;
       // Create event listener that calls handler function stored in ref
-      const eventListener = (event: Event) => savedHandler?.current(event);
+      const eventListener = (event: Event) => savedHandler?.current?.(event);
       // Add event listener
       element.addEventListener(eventName, eventListener);
       // Remove event listener on cleanup
