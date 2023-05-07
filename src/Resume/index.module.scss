@@ -1,0 +1,38 @@
+.Resume {
+  padding: 0 20px;
+}
+
+.summary {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #da9dc0;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  //text-shadow: 0px 1px 1px #574956;
+  box-shadow: 0 1px 1px 1px #a29b9f;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  //align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+    margin: 10px 4px;
+
+    a {
+      color: white;
+      border-radius: 3px;
+      background: #5eb2be;
+      padding: 4px;
+
+      &:hover {
+        background: #8bd8e5;
+      }
+    }
+  }
+}

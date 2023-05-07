@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Senior Frontend Developer",
+    "type": "Full-time",
+    "company": "eVisit",
+    "location": "Mesa, AZ (Remote)",
+    "start": "2023-04-01",
+    "end": "current",
+    "details": ["Currently maintaining the products we developed as Bluestream Health but within the eVisit family"],
+    "tags": [
+      "redux",
+      "react",
+      "typescript",
+      "angular1",
+      "webrtc",
+      "webpack",
+      "node.js",
+      "babel",
+      "ios safari",
+      "php",
+      "sass",
+      "bootstrap",
+      "jira",
+      "git"
+    ],
+    "url": "https://evisit.com"
+  },
+  {
+    "title": "Senior Frontend Developer",
+    "type": "Full-time",
+    "company": "Bluestream Health",
+    "location": "New York, NY (Remote)",
+    "start": "2016-07-01",
+    "end": "2023-04-01",
+    "details": [
+      "Maintained and greatly expanded upon the frontend of the WebRTC healthcare web app I created and designed previously as a contractor",
+      "Sole frontend developer for 5 years, I've been an integral part of the creation and implementation of new features, while maintaining compatibility across many different browsers and platforms",
+      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
+    ],
+    "tags": [
+      "redux",
+      "react",
+      "typescript",
+      "angular1",
+      "webrtc",
+      "webpack",
+      "node.js",
+      "babel",
+      "ios safari",
+      "php",
+      "sass",
+      "bootstrap",
+      "jira",
+      "git"
+    ],
+    "url": "https://bluestreamhealth.com"
+  },
+  {
+    "title": "Frontend Developer",
+    "type": "Full-time",
+    "company": "Curb, Inc",
+    "location": "Austin, TX",
+    "start": "2015-09-01",
+    "end": "2016-07-01",
+    "details": [
+      "Quickly picked up React.js and focused on improving code and design quality across multiple apps. Enhanced graphing and reduced loads of technical debt while adding new features."
+    ],
+    "tags": [
+      "react",
+      "node.js",
+      "d3.js",
+      "sass",
+      "git"
+    ],
+    "url": "https://www.poweredbyelevation.com/curb-energy-monitoring"
+  },
+  {
+    "title": "Frontend Developer / Designer",
+    "type": "Freelance",
+    "company": "Bluestream Health",
+    "location": "New York, NY",
+    "start": "2015-05-01",
+    "end": "2015-10-01",
+    "details": [
+      "Architected the MVP front-end for a web-based peer-to-peer healthcare communication using WebRTC and Angular 1",
+      "Designed and implemented the UI/UX of the app using Sass and Bootstrap with limited design assets",
+      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
+    ],
+    "tags": [
+      "angular1",
+      "webrtc",
+      "gulp.js",
+      "node.js",
+      "babel",
+      "php",
+      "bootstrap",
+      "jira",
+      "git"
+    ],
+    "url": "https://bluestreamhealth.com"
+  },
+  {
+    "title": "Frontend Web Developer",
+    "type": "Full-time",
+    "company": "Imagine Easy Solutions, LLC",
+    "location": "New York, NY",
+    "start": "2013-07-01",
+    "end": "2015-08-01",
+    "details": [
+      "Developed multiple Cloud tools for established education start-up using agile/SCRUM and Kanban processes with a remote scrum master and a distributed development team",
+      "Created custom style framework for Scholar, a note-taking tool, focusing primarily on UX, along with general front-end development in angularjs and SASS.",
+      "Implemented redesign of EasyBib.com using LESS, while restructuring legacy code for ease of use with Grunt.",
+      "Independently built new citation tool for ResearchReady.com from the ground up using Chaplinjs (framework built off of Backbone.js)",
+      "Collaborated with advertising team by building customizable Wordpress site for marketing purposes"
+    ],
+    "tags": [
+      "kanban",
+      "agile",
+      "scrum",
+      "git",
+      "angular1",
+      "chaplin.js",
+      "backbone.js",
+      "less",
+      "sass",
+      "grunt.js",
+      "chrome extensions",
+      "wordpress",
+      "handlebar.js"
+    ],
+    "url": "https://www.linkedin.com/company/imagine-easy-solutions-llc---easybib-com/"
+  },
+  {
+    "title": "Web Developer",
+    "type": "Freelance",
+    "company": "Reductress.com",
+    "location": "New York, NY",
+    "start": "2013-11-01",
+    "end": "2014-07-01",
+    "details": [
+      "Constructed complex WordPress \"magazine\"-style site with a variety of posts types and linked content",
+      "Improved and expanded basic designs, including the creation of a responsive mobile layout"
+    ],
+    "tags": [
+      "wordpress",
+      "design",
+      "php"
+    ],
+    "url": "https://www.reductress.com"
+  },
+  {
+    "title": "Web Developer",
+    "type": "Full-time",
+    "company": "Plenty NYC",
+    "location": "New York, NY",
+    "start": "2011-10-01",
+    "end": "2013-07-01",
+    "details": [
+      "Supported a team of four designers, focusing on multiple time-sensitive projects simultaneously",
+      "Transformed Photoshop designs into fully functional websites",
+      "Translated elaborate designs into websites for a variety of industries, including fashion, education and retail",
+      "Completed an estimated four new high quality websites per month, while working under strict deadlines"
+    ],
+    "tags": [
+      "javascript",
+      "design",
+      "jquery",
+      "html5"
+    ],
+    "url": "https://www.linkedin.com/company/plenty-nyc/"
+  }
+]

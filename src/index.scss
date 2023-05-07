@@ -3,13 +3,22 @@ body {
   font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(21 22 29);
+  background: rgb(255, 223, 233);
   color: rgb(215 46 162 / 94%);
-  border: 5px solid;
-
-  /* animation: borderPulse 1.2s infinite; */
-  overflow: hidden;
   font-weight: bold;
+}
+
+a {
+  color: rgb(215 46 162 / 94%);
+  text-decoration: underline;
+
+  &:hover {
+    color: rgba(94, 178, 190, 0.94);
+  }
+}
+
+strong {
+  font-weight: 600;
 }
 
 @keyframes borderPulse {
