@@ -47,6 +47,7 @@ function Resume(): React.ReactElement {
           I&apos;m a self-taught developer, making websites since the days of Geocities
           and Angelfire. These days I have developed a passion for building beautiful,
           functional, and accessible web applications.
+          Check out the <a target="_blank" rel="noreferrer" href="https://github.com/bxllxdxnnx/bxllxdxnnx">repo</a> for this site to see a sample of my work.
         </p>
         <h3>Education</h3>
         <p>Bachelor of Arts, Computer Science & Mathematics</p>
