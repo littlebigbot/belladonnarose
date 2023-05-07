@@ -7,7 +7,7 @@
     "start": "2023-04-01",
     "end": "current",
     "details": [
-      "Currently maintaining the products we developed as Bluestream Health but within the eVisit family"
+      "Bluestream Health was acquired by eVisit in April 2023, and I'm working to transition and to continue to maintain and expand upon the products we developed as small team"
     ],
     "tags": [
       "redux",
@@ -37,7 +37,8 @@
     "details": [
       "Maintained and greatly expanded upon the frontend of the WebRTC healthcare web app I created and designed previously as a contractor",
       "Sole frontend developer for 5 years, I've been an integral part of the creation and implementation of new features, while maintaining compatibility across many different browsers and platforms",
-      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
+      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize",
+      "Developed the frontend for a highly configurable patient front door allowing us to address the needs of a wide variety of client needs"
     ],
     "tags": [
       "redux",
@@ -68,7 +69,7 @@
       "Quickly picked up React.js and focused on improving code and design quality across multiple apps. Enhanced graphing and reduced loads of technical debt while adding new features."
     ],
     "tags": ["react", "node.js", "d3.js", "sass", "git"],
-    "url": "https://www.poweredbyelevation.com/curb-energy-monitoring"
+    "url": "https://www.linkedin.com/company/curb/"
   },
   {
     "title": "Frontend Developer / Designer",

@@ -35,7 +35,7 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
-            StackOverflow
+            Stack Overflow
           </a>
         </li>
       </ul>
@@ -43,11 +43,10 @@ function Resume(): React.ReactElement {
       <div className={styles.summary}>
         <h3>Background</h3>
         <p>
-          Hi, my name is Belladonna Rose. I am a full stack developer with a passion for
-          building beautiful, functional, and accessible web applications. I have a
-          background in design and a love for learning new things. I am a self-starter and
-          a team player. I am looking for a position where I can grow and learn new
-          skills.
+          Hi! I&apos;m Belladonna Rose, a frontend developer with full stack capabilities.
+          I&apos;m a self-taught developer, making websites since the days of Geocities
+          and Angelfire. These days I have developed a passion for building beautiful,
+          functional, and accessible web applications.
         </p>
         <h3>Education</h3>
         <p>Bachelor of Arts, Computer Science & Mathematics</p>
