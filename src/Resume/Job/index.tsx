@@ -32,7 +32,7 @@ function Job({
 
   const startDate = dayjs(start);
   const endDate = end === 'current' ? dayjs() : dayjs(end);
-  const timePeriod = endDate.diff(startDate, 'month');
+  // const timePeriod = endDate.diff(startDate, 'month');
 
   return (
     <div className={styles.Job}>
