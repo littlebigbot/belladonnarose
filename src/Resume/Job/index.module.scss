@@ -1,7 +1,6 @@
 .Job {
   max-width: 800px;
-  margin: 0 auto 10px auto;
-
+  margin: 0 auto 10px;
   padding: 20px;
   border-bottom: 1px solid;
 
@@ -29,14 +28,12 @@
   flex-wrap: wrap;
 
   li {
-    text-shadow: 0px 1px 1px #574956;
+    text-shadow: 0 1px 1px #574956;
     position: relative;
-    background: rgb(222, 161, 175);
+    background: rgb(222 161 175);
     color: white;
     border-radius: 3px;
     padding: 4px;
     margin: 4px;
-
-
   }
 }

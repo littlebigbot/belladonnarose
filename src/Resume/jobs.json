@@ -6,7 +6,9 @@
     "location": "Mesa, AZ (Remote)",
     "start": "2023-04-01",
     "end": "current",
-    "details": ["Currently maintaining the products we developed as Bluestream Health but within the eVisit family"],
+    "details": [
+      "Currently maintaining the products we developed as Bluestream Health but within the eVisit family"
+    ],
     "tags": [
       "redux",
       "react",
@@ -65,13 +67,7 @@
     "details": [
       "Quickly picked up React.js and focused on improving code and design quality across multiple apps. Enhanced graphing and reduced loads of technical debt while adding new features."
     ],
-    "tags": [
-      "react",
-      "node.js",
-      "d3.js",
-      "sass",
-      "git"
-    ],
+    "tags": ["react", "node.js", "d3.js", "sass", "git"],
     "url": "https://www.poweredbyelevation.com/curb-energy-monitoring"
   },
   {
@@ -141,11 +137,7 @@
       "Constructed complex WordPress \"magazine\"-style site with a variety of posts types and linked content",
       "Improved and expanded basic designs, including the creation of a responsive mobile layout"
     ],
-    "tags": [
-      "wordpress",
-      "design",
-      "php"
-    ],
+    "tags": ["wordpress", "design", "php"],
     "url": "https://www.reductress.com"
   },
   {
@@ -161,12 +153,7 @@
       "Translated elaborate designs into websites for a variety of industries, including fashion, education and retail",
       "Completed an estimated four new high quality websites per month, while working under strict deadlines"
     ],
-    "tags": [
-      "javascript",
-      "design",
-      "jquery",
-      "html5"
-    ],
+    "tags": ["javascript", "design", "jquery", "html5"],
     "url": "https://www.linkedin.com/company/plenty-nyc/"
   }
 ]

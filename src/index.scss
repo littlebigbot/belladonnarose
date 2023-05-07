@@ -3,7 +3,7 @@ body {
   font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(255, 223, 233);
+  background: rgb(255 223 233);
   color: rgb(215 46 162 / 94%);
   font-weight: bold;
 }
@@ -13,7 +13,7 @@ a {
   text-decoration: underline;
 
   &:hover {
-    color: rgba(94, 178, 190, 0.94);
+    color: rgb(94 178 190 / 94%);
   }
 }
 

@@ -1,7 +1,10 @@
 .Home {
   /* display: flex; */
+
   /* flex-direction: column; */
+
   /* justify-content: flex-end; */
+
   /* align-items: center; */
   height: 100%;
   position: relative;
@@ -11,5 +14,3 @@
   /* border: 1px dashed; */
   width: 80vw;
 }
-
-/*# sourceMappingURL=index.css.map */
