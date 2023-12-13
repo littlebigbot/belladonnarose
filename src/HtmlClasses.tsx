@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
 import classNames from 'classnames';
-import { ReactComponentElement, ReactElement } from 'react';
 
 const classCase = (string: string): string => {
   return string.toLowerCase().replace(/-_\//g, '-');

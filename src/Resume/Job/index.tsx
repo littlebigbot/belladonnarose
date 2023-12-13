@@ -68,7 +68,7 @@ function Job({
         {tags.map((tag, index) => (
           <button
             className={ activeTags.includes(tag) ? styles.active : '' }
-            onClick={e => filterByTag(tag)}
+            onClick={() => filterByTag(tag)}
             key={index}
           >
             {tag}

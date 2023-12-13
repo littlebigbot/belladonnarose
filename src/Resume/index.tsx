@@ -111,7 +111,7 @@ function Resume(): React.ReactElement {
 
       <button
         className={classes('filter', { open: filterOpen })}
-        onClick={e => setFilterOpen(!filterOpen)}
+        onClick={() => setFilterOpen(!filterOpen)}
       >
         <Icon icon={faFilter} aria-hidden={true} />
         filter
@@ -122,7 +122,7 @@ function Resume(): React.ReactElement {
       >
 
         <button
-          onClick={e => setFilterOpen(false)}
+          onClick={() => setFilterOpen(false)}
           className={styles.closeFilter}
         >
           <Icon icon={faTimes} aria-hidden={true}/>
@@ -130,7 +130,7 @@ function Resume(): React.ReactElement {
         </button>
         {
           allTags
-            .map(( tag, index  )=> <button className={classes('tag', {active: activeTags.includes(tag) })} onClick={e => filter(tag)} key={index}>{tag}</button>)
+            .map(( tag, index  )=> <button className={classes('tag', {active: activeTags.includes(tag) })} onClick={() => filter(tag)} key={index}>{tag}</button>)
         }
       </div>
 
