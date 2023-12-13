@@ -1,4 +1,8 @@
 import * as React from 'react';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faStackOverflow } from '@fortawesome/free-brands-svg-icons/faStackOverflow';
 
 import styles from './index.module.scss';
 import jobs from './jobs.json';
@@ -16,17 +20,18 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
+            <Icon icon={faLinkedin} aria-hidden={true} />
             LinkedIn
           </a>
         </li>
         <li>
-          <a href="https://github.com/littlebigbot" rel="noreferrer" target="_blank">
-            Business GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/littlebigbot" rel="noreferrer" target="_blank">
-            Personal GitHub
+          <a
+            href="https://github.com/littlebigbot"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Icon icon={faGithub} aria-hidden={true} />
+            GitHub
           </a>
         </li>
         <li>
@@ -35,6 +40,7 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
+            <Icon icon={faStackOverflow} aria-hidden={true} />
             Stack Overflow
           </a>
         </li>
@@ -43,10 +49,10 @@ function Resume(): React.ReactElement {
       <div className={styles.summary}>
         <h3>Background</h3>
         <p>
-          Hi! I&apos;m Belladonna Rose, a frontend developer with full stack capabilities.
-          I&apos;m a self-taught developer, making websites since the days of Geocities
+          Hi! I&apos;m Belladonna Rose, a web developer with a love of the front end.
+          I&apos;m a (mostly) self-taught developer, making websites since the days of Geocities
           and Angelfire. These days I have developed a passion for building beautiful,
-          functional, and accessible web applications.
+          functional, and accessible web applications, especially with WebRTC.
           Check out the <a target="_blank" rel="noreferrer" href="https://github.com/bxllxdxnnx/bxllxdxnnx">repo</a> for this site to see a sample of my work.
         </p>
         <h3>Education</h3>

@@ -5,6 +5,10 @@
   "homepage": "https://bxllxdxnnx.com",
   "dependencies": {
     "@fontsource/anonymous-pro": "^4.5.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.7",
     "react": "^17.0.2",
