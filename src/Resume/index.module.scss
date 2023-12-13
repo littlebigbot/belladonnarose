@@ -10,13 +10,6 @@
   flex-direction: column;
 }
 
-:global {
-  html.location-resume body {
-    background: rgb(255,211,221);
-    background: linear-gradient(0deg, rgba(255,211,221,1) 0%, rgba(255,231,240,1) 100%);
-    background-attachment: fixed;
-  }
-}
 
 .name {
   margin-bottom: 0;
