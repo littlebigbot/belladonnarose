@@ -4,15 +4,17 @@ import dayjs from 'dayjs';
 import styles from './index.module.scss';
 
 type JobProps = {
-  title: string;
-  company: string;
-  start: string;
-  end: string;
-  location: string;
-  details: string[];
-  tags: string[];
-  type: string;
-  url?: string;
+  title: string,
+  company: string,
+  start: string,
+  end: string,
+  location: string,
+  details: string[],
+  tags: string[],
+  type: string,
+  url?: string,
+  filterByTag: (tag: string) => void,
+  activeTags: string[],
 };
 
 const DEFAULT_DATE_FORMAT = 'MMM YYYY';
@@ -27,8 +29,9 @@ function Job({
   details,
   tags,
   url,
+  filterByTag,
+  activeTags,
 }: JobProps): React.ReactElement {
-  // start, end
 
   const startDate = dayjs(start);
   const endDate = end === 'current' ? dayjs() : dayjs(end);
@@ -61,11 +64,17 @@ function Job({
           <li key={index}>{detail}</li>
         ))}
       </ul>
-      <ul className={styles.tags}>
+      <div className={styles.tags}>
         {tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
+          <button
+            className={ activeTags.includes(tag) ? styles.active : '' }
+            onClick={e => filterByTag(tag)}
+            key={index}
+          >
+            {tag}
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

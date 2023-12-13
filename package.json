@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://bxllxdxnnx.com",
   "dependencies": {
-    "@fontsource/anonymous-pro": "^4.5.0",
+    "@fontsource-variable/karla": "^5.0.19",
+    "@fontsource/dm-serif-text": "^5.0.18",
+    "@fontsource/xanh-mono": "^5.0.18",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",

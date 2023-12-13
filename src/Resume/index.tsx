@@ -3,17 +3,67 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faStackOverflow } from '@fortawesome/free-brands-svg-icons/faStackOverflow';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { faFilter } from '@fortawesome/free-solid-svg-icons/faFilter';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import classNames from 'classnames/bind';
 
 import styles from './index.module.scss';
 import jobs from './jobs.json';
+import info from './info.json';
 import Job from './Job';
 
 function Resume(): React.ReactElement {
+
+  const [activeTags, setActiveTags] = React.useState([] as string[]);
+  const [currentJobs, setCurrentJobs] = React.useState(jobs);
+  const [filterOpen, setFilterOpen] = React.useState(false);
+
+  const classes = classNames.bind(styles);
+
+  const filter = (tag: string) => {
+    const index = activeTags.indexOf(tag);
+    let newActiveTags: string[] = [];
+    if(index >= 0) {
+      newActiveTags = activeTags.slice(index + 1, activeTags.length);
+    } else {
+      newActiveTags = activeTags.concat(tag);
+    }
+    setActiveTags(newActiveTags);
+    if(newActiveTags.length) {
+      const newCurrentJobs = jobs
+        .filter(job => newActiveTags.every(tag => job.tags.includes(tag)))
+      setCurrentJobs(newCurrentJobs);
+    } else {
+      setCurrentJobs(jobs);
+    }
+  }
+
+  // converting to Set and back filters out unique vals
+  const allTags = Array.from(new Set(jobs
+    .map(job => job.tags)
+    .flat()));
+
   return (
     <div className={styles.Resume}>
-      <h1>Belladonna Rose</h1>
+
+      <h1 className={styles.name}><span>B</span>elladonna <span>R</span>ose</h1>
+
+      <h3 className={styles.location}>{info.location}</h3>
+
+      <h4 className={styles.email}>{info.email}</h4>
 
       <ul className={styles.links}>
+        <li>
+          <a
+            href={ `mailto:${info.email}` }
+            rel="noreferrer"
+            target="_blank"
+          >
+           <Icon icon={faEnvelope} aria-hidden={true} />
+            {info.email}
+          </a>
+        </li>
         <li>
           <a
             href="https://www.linkedin.com/in/belladonna-rose-2321773b/"
@@ -46,15 +96,10 @@ function Resume(): React.ReactElement {
         </li>
       </ul>
 
-      <div className={styles.summary}>
-        <h3>Background</h3>
-        <p>
-          Hi! I&apos;m Belladonna Rose, a web developer with a love of the front end.
-          I&apos;m a (mostly) self-taught developer, making websites since the days of Geocities
-          and Angelfire. These days I have developed a passion for building beautiful,
-          functional, and accessible web applications, especially with WebRTC.
-          Check out the <a target="_blank" rel="noreferrer" href="https://github.com/bxllxdxnnx/bxllxdxnnx">repo</a> for this site to see a sample of my work.
-        </p>
+      <h2>Background</h2>
+
+      <div className={styles.background}>
+        <p className={styles.summary} dangerouslySetInnerHTML={{__html: info.bio}} />
         <h3>Education</h3>
         <p>Bachelor of Arts, Computer Science & Mathematics</p>
         <p>
@@ -62,11 +107,39 @@ function Resume(): React.ReactElement {
         </p>
       </div>
 
+      <h2>Work History</h2>
+
+      <button
+        className={classes('filter', { open: filterOpen })}
+        onClick={e => setFilterOpen(!filterOpen)}
+      >
+        <Icon icon={faFilter} aria-hidden={true} />
+        filter
+      </button>
+
+      <div
+        className={classes('filterSection', { open: filterOpen })}
+      >
+
+        <button
+          onClick={e => setFilterOpen(false)}
+          className={styles.closeFilter}
+        >
+          <Icon icon={faTimes} aria-hidden={true}/>
+          Close
+        </button>
+        {
+          allTags
+            .map(( tag, index  )=> <button className={classes('tag', {active: activeTags.includes(tag) })} onClick={e => filter(tag)} key={index}>{tag}</button>)
+        }
+      </div>
+
       <div className={styles.jobs}>
-        {jobs.map((job, index) => (
-          <Job key={index} {...job} />
+        {currentJobs.map((job, index) => (
+          <Job key={index} filterByTag={filter} activeTags={activeTags} {...job} />
         ))}
       </div>
+      <div className={styles.finisher}>❁</div>
     </div>
   );
 }

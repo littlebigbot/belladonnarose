@@ -4,10 +4,14 @@ import Home from './Home';
 import About from './About';
 import Resume from './Resume';
 import './App.scss';
+import HtmlClasses from './HtmlClasses';
 
 function App(): React.ReactElement {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+
+     <HtmlClasses/>
+
       <div className="App">
         <header className="menu">
           <Link to="/">Home</Link>

@@ -1,10 +1,26 @@
 body {
   margin: 0;
-  font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  //font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: 'Karla Variable';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(255 223 233);
   color: rgb(215 46 162 / 94%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Text';
+  font-weight: 600;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background: none;
+}
+
+::selection {
+  color: white;
+  background-color: #ff7bc1;
 }
 
 a {

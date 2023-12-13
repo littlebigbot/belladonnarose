@@ -10,20 +10,23 @@
       "Bluestream Health was acquired by eVisit in April 2023, and I'm working to transition and to continue to maintain and expand upon the products we developed as small team"
     ],
     "tags": [
-      "redux",
-      "react",
-      "typescript",
-      "angular1",
-      "webrtc",
+      "React",
+      "TypeScript",
+      "WebRTC",
+      "Redux",
       "webpack",
       "node.js",
-      "babel",
-      "ios safari",
-      "php",
-      "sass",
-      "bootstrap",
-      "jira",
-      "git"
+      "Babel",
+      "iOS",
+      "webOS",
+      "PHP",
+      "Sass",
+      "Bootstrap",
+      "Jira",
+      "Git",
+      "AngularJS",
+      "ECMASCript 2015+",
+      "Lodash"
     ],
     "url": "https://evisit.com"
   },
@@ -37,24 +40,27 @@
     "details": [
       "Maintained and greatly expanded upon the frontend of the WebRTC healthcare web app I created and designed previously as a contractor",
       "Sole frontend developer for 5 years, I've been an integral part of the creation and implementation of new features, while maintaining compatibility across many different browsers and platforms",
-      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize",
+      "Architected migration from Angular 1 to React.js and TypeScript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize",
       "Developed the frontend for a highly configurable patient front door allowing us to address the needs of a wide variety of client needs"
     ],
     "tags": [
-      "redux",
-      "react",
-      "typescript",
-      "angular1",
-      "webrtc",
+      "React",
+      "TypeScript",
+      "WebRTC",
+      "Redux",
       "webpack",
       "node.js",
-      "babel",
-      "ios safari",
-      "php",
-      "sass",
-      "bootstrap",
-      "jira",
-      "git"
+      "Babel",
+      "iOS",
+      "webOS",
+      "PHP",
+      "Sass",
+      "Bootstrap",
+      "Jira",
+      "Git",
+      "AngularJS",
+      "ECMASCript 2015+",
+      "Lodash"
     ],
     "url": "https://bluestreamhealth.com"
   },
@@ -68,7 +74,15 @@
     "details": [
       "Quickly picked up React.js and focused on improving code and design quality across multiple apps. Enhanced graphing and reduced loads of technical debt while adding new features."
     ],
-    "tags": ["react", "node.js", "d3.js", "sass", "git"],
+    "tags": [
+      "React",
+      "node.js",
+      "D3.js",
+      "Sass",
+      "Git",
+      "ECMASCript 2015+",
+      "Lodash"
+    ],
     "url": "https://www.linkedin.com/company/curb/"
   },
   {
@@ -81,18 +95,19 @@
     "details": [
       "Architected the MVP front-end for a web-based peer-to-peer healthcare communication using WebRTC and Angular 1",
       "Designed and implemented the UI/UX of the app using Sass and Bootstrap with limited design assets",
-      "Architected migration from Angular 1 to React.js and Typescript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
+      "Architected migration from Angular 1 to React.js and TypeScript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
     ],
     "tags": [
-      "angular1",
-      "webrtc",
+      "AngularJS",
+      "WebRTC",
       "gulp.js",
       "node.js",
-      "babel",
-      "php",
-      "bootstrap",
-      "jira",
-      "git"
+      "Babel",
+      "PHP",
+      "Bootstrap",
+      "Jira",
+      "Git",
+      "Lodash"
     ],
     "url": "https://bluestreamhealth.com"
   },
@@ -105,25 +120,25 @@
     "end": "2015-08-01",
     "details": [
       "Developed multiple Cloud tools for established education start-up using agile/SCRUM and Kanban processes with a remote scrum master and a distributed development team",
-      "Created custom style framework for Scholar, a note-taking tool, focusing primarily on UX, along with general front-end development in angularjs and SASS.",
-      "Implemented redesign of EasyBib.com using LESS, while restructuring legacy code for ease of use with Grunt.",
-      "Independently built new citation tool for ResearchReady.com from the ground up using Chaplinjs (framework built off of Backbone.js)",
-      "Collaborated with advertising team by building customizable Wordpress site for marketing purposes"
+      "Created custom style framework for Scholar, a note-taking tool, focusing primarily on UX, along with general front-end development in angularjs and Sass.",
+      "Implemented redesign of EasyBib.com using Less.js, while restructuring legacy code for ease of use with Grunt.",
+      "Independently built new citation tool for ResearchReady.com from the ground up using Chaplin (framework built off of Backbone.js)",
+      "Collaborated with advertising team by building customizable WordPress site for marketing purposes"
     ],
     "tags": [
-      "kanban",
-      "agile",
-      "scrum",
-      "git",
-      "angular1",
-      "chaplin.js",
-      "backbone.js",
-      "less",
-      "sass",
-      "grunt.js",
-      "chrome extensions",
-      "wordpress",
-      "handlebar.js"
+      "AngularJS",
+      "Chaplin",
+      "Backbone.js",
+      "Less.js",
+      "Sass",
+      "Grunt",
+      "Chrome Extensions",
+      "WordPress",
+      "Handlebars",
+      "Kanban",
+      "Agile",
+      "Scrum",
+      "Git"
     ],
     "url": "https://www.linkedin.com/company/imagine-easy-solutions-llc---easybib-com/"
   },
@@ -138,7 +153,7 @@
       "Constructed complex WordPress \"magazine\"-style site with a variety of posts types and linked content",
       "Improved and expanded basic designs, including the creation of a responsive mobile layout"
     ],
-    "tags": ["wordpress", "design", "php"],
+    "tags": ["WordPress", "design", "PHP", "JavaScript"],
     "url": "https://www.reductress.com"
   },
   {
@@ -151,10 +166,11 @@
     "details": [
       "Supported a team of four designers, focusing on multiple time-sensitive projects simultaneously",
       "Transformed Photoshop designs into fully functional websites",
+      "Converted Flash-based websites into HTML5",
       "Translated elaborate designs into websites for a variety of industries, including fashion, education and retail",
       "Completed an estimated four new high quality websites per month, while working under strict deadlines"
     ],
-    "tags": ["javascript", "design", "jquery", "html5", "wordpress", "php", "ie6 lol"],
+    "tags": ["JavaScript", "Design", "jQuery", "HTML5", "WordPress", "PHP", "IE 6"],
     "url": "https://www.linkedin.com/company/plenty-nyc/"
   }
 ]
