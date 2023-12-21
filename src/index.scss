@@ -1,17 +1,55 @@
+
+// light and dark modes
+
+body {
+  --color-background-primary: rgb(255,211,221);
+  --color-background-secondary: rgba(255,231,240,1);
+  --color-foreground: rgb(215 46 162 / 94%);
+
+  --color-link: rgb(215 46 162 / 94%);
+  --color-link-hover: rgb(94 178 190 / 94%);
+
+  --color-highlight-background: #ff7bc1;
+  --color-highlight-foreground: white;
+
+  --font-family-title: DM Serif Text;
+  --font-family-text: Karla Variable;
+  --font-family-monospace: Xanh Mono;
+  --time-theme-transition: .2s;
+}
+body.dark {
+  --color-background-primary: #12061a;
+  --color-background-secondary: black;
+  --color-foreground: rgb(215 46 162 / 94%);
+
+  --color-link: #15d554;
+  --color-link-hover: #fff200;
+
+  --color-highlight-background: #b212cb;
+  --color-highlight-foreground: #ffffff;
+
+  //--font-family-title: Crimson Pro Variable;
+  //--font-family-text: Righteous;
+  //--font-family-monospace: Lora Variable;
+}
+
+
 body {
   margin: 0;
-  //font-family: 'Anonymous Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-family: 'Karla Variable';
+  font-family: var(--font-family-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(215 46 162 / 94%);
-  background: rgb(255,211,221);
-  background: linear-gradient(0deg, rgba(255,211,221,1) 0%, rgba(255,231,240,1) 100%);
+  color: var(--color-foreground);
+  background-color: var(--color-background-primary);
+  //background: linear-gradient(0deg, var(--color-background-primary) 0%, var(--color-background-secondary) 100%);
   background-attachment: fixed;
+  transition-duration: var(--time-theme-transition);
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Text';
+  font-family: var(--font-family-title);
   font-weight: 600;
 }
 
@@ -22,16 +60,18 @@ button {
 }
 
 ::selection {
-  color: white;
-  background-color: #ff7bc1;
+  color: var(--color-highlight-foreground);
+  background-color: var(--color-highlight-background);
+  text-shadow: none;
 }
 
 a {
-  color: rgb(215 46 162 / 94%);
+  color: var(--color-link);
   text-decoration: underline;
+  transition: color .2s ease-in-out;
 
   &:hover {
-    color: rgb(94 178 190 / 94%);
+    color: var(--color-link-hover);
   }
 }
 
@@ -67,4 +107,14 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

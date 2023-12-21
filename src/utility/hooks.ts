@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 // via: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 export const useInterval = (callback: () => unknown, delay: number): void => {
@@ -213,3 +214,33 @@ export const getRect = (element: HTMLElement | null | undefined): DOMRect => {
 
   return element.getBoundingClientRect();
 };
+
+
+export function useColorScheme(forceLight = false): [boolean, (value: boolean) => void] {
+  const systemPrefersDark = useMediaQuery(
+    {
+      query: '(prefers-color-scheme: dark)',
+    },
+    undefined
+  );
+
+  const [isDark, setIsDark] = React.useState(systemPrefersDark && !forceLight);
+
+  const value = React.useMemo(
+    () => (isDark === undefined ? systemPrefersDark : isDark),
+    [isDark, systemPrefersDark]
+  );
+
+  React.useEffect(() => {
+    if (value) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [value]);
+
+  return [
+    value,
+    setIsDark,
+ ];
+}

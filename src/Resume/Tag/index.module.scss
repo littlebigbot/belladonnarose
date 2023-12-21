@@ -1,0 +1,39 @@
+body {
+  --color-tag-background: rgb(255, 168, 187);
+  --color-tag-background-hover: rgb(229, 142, 161);
+  --color-tag-background-active: #77bde5;
+  --color-tag-foreground: white;
+  --color-tag-shadow: rgba(250, 183, 171, 0.63);
+}
+:global(body.dark) {
+  --color-tag-background: #c41aa2;
+  --color-tag-background-hover: #2560ce;
+  --color-tag-background-active: #1582ff;
+  --color-tag-foreground: #ffffff;
+  --color-tag-shadow: rgba(162, 46, 46, 0.44);
+}
+.Tag {
+  font-family: var(--font-family-monospace);
+  appearance: none;
+  border: 0;
+  box-shadow: 2px 2px 2px 0px var(--color-tag-shadow);
+  position: relative;
+  background-color: var(--color-tag-background);
+  color: var(--color-tag-foreground);
+  border-radius: 3px;
+  padding: 4px;
+  margin: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    background-color: var(--color-tag-background-hover);
+  }
+}
+
+button.active {
+  background: var(--color-tag-background-active);
+}

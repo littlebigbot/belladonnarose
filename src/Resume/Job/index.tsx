@@ -2,6 +2,7 @@ import * as React from 'react';
 import dayjs from 'dayjs';
 
 import styles from './index.module.scss';
+import Tag from '../Tag';
 
 type JobProps = {
   title: string,
@@ -66,13 +67,12 @@ function Job({
       </ul>
       <div className={styles.tags}>
         {tags.map((tag, index) => (
-          <button
-            className={ activeTags.includes(tag) ? styles.active : '' }
-            onClick={() => filterByTag(tag)}
-            key={index}
-          >
-            {tag}
-          </button>
+          <Tag
+             activeTags={activeTags}
+             filterByTag={filterByTag}
+             name={tag}
+             key={index}
+          />
         ))}
       </div>
     </div>

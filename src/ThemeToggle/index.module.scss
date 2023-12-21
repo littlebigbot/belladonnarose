@@ -1,0 +1,113 @@
+.ThemeToggle {
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  left: 10px;
+  font-size: 100%;
+  cursor: pointer;
+
+  color: var(--color-toggle-icon);
+  font-size: var(--size-toggle-icon);
+  line-height: 50px;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background: var(--color-toggle-icon);
+    transition: all .2s ease-in-out;
+  }
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(
+        50px 40px at 35px bottom,
+        var(--color-toggle-background-primary) 10%,
+        var(--color-toggle-background-secondary) 40%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    width: 100%;
+    height: 100%;
+    transition: opacity .4s ease-out;
+    opacity: 0;
+  }
+
+  //svg {
+  //  transition: all .2s ease-in-out;
+  //}
+
+  svg {
+    position: absolute;
+  }
+
+  &:hover {
+    //svg {
+    //  transform: rotate(-30deg);
+    //}
+
+    &:after {
+      left: 0%;
+      width: 100%;
+
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-toggle-icon) 20%, var(--color-toggle-icon) 80%, rgba(255,255,255,0) 100%);
+    }
+
+    //&:before:not(.clicked) {
+    //  top: 0%;
+    //}
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+}
+
+.sun,
+.moon {
+  transform-origin: 50% 200%;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.sun {
+    transform: rotate(var(--sun-rotation));
+}
+
+.moon {
+  transform: rotate(var(--moon-rotation));
+}
+
+body {
+  --color-toggle-icon: #fab260;
+  --color-toggle-background-primary: rgba(252, 143, 85, 0.3);
+  --color-toggle-background-secondary: rgba(250, 215, 41, 0.47);
+  --size-toggle-icon: 24px;
+  --sun-rotation: 0deg;
+  --moon-rotation: 180deg;
+
+}
+:global(body.dark) {
+  --color-toggle-icon: #6746a6;
+  --color-toggle-background-primary: rgba(92, 33, 204, 0.68);
+  --color-toggle-background-secondary: rgba(82, 37, 190, 0.59);
+  --size-toggle-icon: 20px;
+  --sun-rotation: 180deg;
+  --moon-rotation: 0deg;
+}
+

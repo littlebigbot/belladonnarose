@@ -12,6 +12,8 @@ import styles from './index.module.scss';
 import jobs from './jobs.json';
 import info from './info.json';
 import Job from './Job';
+import Tag from './Tag';
+import { removeByValue } from '../utility/array';
 
 function Resume(): React.ReactElement {
 
@@ -25,10 +27,11 @@ function Resume(): React.ReactElement {
     const index = activeTags.indexOf(tag);
     let newActiveTags: string[] = [];
     if(index >= 0) {
-      newActiveTags = activeTags.slice(index + 1, activeTags.length);
+      newActiveTags = removeByValue(activeTags, tag);
     } else {
       newActiveTags = activeTags.concat(tag);
     }
+    console.log(newActiveTags)
     setActiveTags(newActiveTags);
     if(newActiveTags.length) {
       const newCurrentJobs = jobs
@@ -60,8 +63,8 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
-           <Icon icon={faEnvelope} aria-hidden={true} />
-            {info.email}
+           <Icon icon={faEnvelope} aria-hidden={true} fixedWidth />
+            <span className="sr-only">{info.email}</span>
           </a>
         </li>
         <li>
@@ -70,8 +73,8 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon icon={faLinkedin} aria-hidden={true} />
-            LinkedIn
+            <Icon icon={faLinkedin} aria-hidden={true} fixedWidth />
+            <span className="sr-only">LinkedIn</span>
           </a>
         </li>
         <li>
@@ -80,8 +83,8 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon icon={faGithub} aria-hidden={true} />
-            GitHub
+            <Icon icon={faGithub} aria-hidden={true} fixedWidth />
+            <span className="sr-only">GitHub</span>
           </a>
         </li>
         <li>
@@ -90,15 +93,15 @@ function Resume(): React.ReactElement {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon icon={faStackOverflow} aria-hidden={true} />
-            Stack Overflow
+            <Icon icon={faStackOverflow} aria-hidden={true} fixedWidth />
+            <span className="sr-only">Stack Overflow</span>
           </a>
         </li>
       </ul>
 
-      <h2>Background</h2>
 
       <div className={styles.background}>
+        <h3>Background</h3>
         <p className={styles.summary} dangerouslySetInnerHTML={{__html: info.bio}} />
         <h3>Education</h3>
         <p>Bachelor of Arts, Computer Science & Mathematics</p>
@@ -130,7 +133,10 @@ function Resume(): React.ReactElement {
         </button>
         {
           allTags
-            .map(( tag, index  )=> <button className={classes('tag', {active: activeTags.includes(tag) })} onClick={() => filter(tag)} key={index}>{tag}</button>)
+            .map(
+              ( tag, index  ) =>
+                <Tag key={index} name={tag} filterByTag={filter} activeTags={activeTags} />
+            )
         }
       </div>
 
@@ -139,7 +145,7 @@ function Resume(): React.ReactElement {
           <Job key={index} filterByTag={filter} activeTags={activeTags} {...job} />
         ))}
       </div>
-      <div className={styles.finisher}>❁</div>
+      <div className={styles.finisher} />
     </div>
   );
 }

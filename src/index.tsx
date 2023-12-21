@@ -6,6 +6,7 @@ import '@fontsource-variable/karla';
 
 import './index.scss';
 import App from './App';
+import './utility/array';
 
 ReactDOM.render(
   <React.StrictMode>
