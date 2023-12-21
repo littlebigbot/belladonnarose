@@ -27,7 +27,7 @@ function Resume(): React.ReactElement {
     const index = activeTags.indexOf(tag);
     let newActiveTags: string[] = [];
     if(index >= 0) {
-      newActiveTags = removeByValue(activeTags, tag);
+      newActiveTags = removeByValue(activeTags, tag) as string[];
     } else {
       newActiveTags = activeTags.concat(tag);
     }
