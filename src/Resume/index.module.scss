@@ -66,8 +66,9 @@ body {
   padding: 0 20px;
   //background-color: var(--color-resume-background-primary);
   background: linear-gradient(-30deg, var(--color-resume-background-primary) 0%, var(--color-resume-background-secondary) 100%);
-  margin: 50px auto;
-  max-width: 700px;
+  margin: 20px auto 50px auto;
+  width: 700px;
+  max-width: 90%;
   box-shadow: 10px 10px 10px var(--color-resume-shadow);
   border-radius: 4px;
   display: flex;
@@ -247,8 +248,12 @@ body {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .name {
     font-size: 300%;
+  }
+
+  .Resume {
+    margin-top: 80px;
   }
 }
