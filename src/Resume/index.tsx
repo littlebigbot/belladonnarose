@@ -31,7 +31,7 @@ function Resume(): React.ReactElement {
     } else {
       newActiveTags = activeTags.concat(tag);
     }
-    console.log(newActiveTags)
+
     setActiveTags(newActiveTags);
     if(newActiveTags.length) {
       const newCurrentJobs = jobs
