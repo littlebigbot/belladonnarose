@@ -7,7 +7,9 @@
     "start": "2023-04-01",
     "end": "current",
     "details": [
-      "Bluestream Health was acquired by eVisit in April 2023, and I'm working to transition and to continue to maintain and expand upon the products we developed as small team"
+      "Bluestream Health was acquired by eVisit in April 2023, and I've been working to transition and to continue to maintain and expand upon the products we developed as small team",
+      "Expanded modular front door to double the number of possible use cases",
+      "Supported the development of our app to work in legacy browsers embedded on hospital TVs"
     ],
     "tags": [
       "React",
@@ -17,7 +19,6 @@
       "webpack",
       "node.js",
       "Babel",
-      "iOS",
       "webOS",
       "PHP",
       "Sass",
@@ -39,9 +40,9 @@
     "end": "2023-04-01",
     "details": [
       "Maintained and greatly expanded upon the frontend of the WebRTC healthcare web app I created and designed previously as a contractor",
-      "Sole frontend developer for 5 years, I've been an integral part of the creation and implementation of new features, while maintaining compatibility across many different browsers and platforms",
-      "Architected migration from Angular 1 to React.js and TypeScript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize",
-      "Developed the frontend for a highly configurable patient front door allowing us to address the needs of a wide variety of client needs"
+      "Sole frontend developer for 5 years of my tenure, I was an integral part of the creation and implementation of new features particularly on the WebRTC video layer, while maintaining compatibility across many different browsers, platforms, and devices",
+      "Architected migration of video layer from AngularJS to React.js/TypeScript, with a focus on being highly configurable and easily extensible for the entire dev team",
+      "Developed the frontend for a module-based configurable patient front door allowing us to easily address the needs of any new and existing customer needs"
     ],
     "tags": [
       "React",
@@ -72,7 +73,8 @@
     "start": "2015-09-01",
     "end": "2016-07-01",
     "details": [
-      "Quickly picked up React.js and focused on improving code and design quality across multiple apps. Enhanced graphing and reduced loads of technical debt while adding new features."
+      "Quickly picked up React.js and focused on improving code and design quality across multiple apps",
+      "Enhanced graphing dashboard and reduced load times and technical debt while adding new features"
     ],
     "tags": [
       "React",
@@ -80,6 +82,7 @@
       "D3.js",
       "Sass",
       "Git",
+      "gulp.js",
       "ECMASCript 2015+",
       "Lodash"
     ],
@@ -93,9 +96,8 @@
     "start": "2015-05-01",
     "end": "2015-10-01",
     "details": [
-      "Architected the MVP front-end for a web-based peer-to-peer healthcare communication using WebRTC and Angular 1",
-      "Designed and implemented the UI/UX of the app using Sass and Bootstrap with limited design assets",
-      "Architected migration from Angular 1 to React.js and TypeScript, with a focus on easily expanding upon the existing feature set for myself and other developers while enforcing best practices and creating dozens of utilities for other developers to utilize"
+      "Architected the frontend of the MVP web-based peer-to-peer healthcare communication using WebRTC and AngularJS",
+      "Designed and implemented the UI/UX of the app using Sass and Bootstrap with limited design assets"
     ],
     "tags": [
       "AngularJS",
@@ -105,7 +107,6 @@
       "Babel",
       "PHP",
       "Bootstrap",
-      "Jira",
       "Git",
       "Lodash"
     ],
@@ -119,11 +120,11 @@
     "start": "2013-07-01",
     "end": "2015-08-01",
     "details": [
-      "Developed multiple Cloud tools for established education start-up using agile/SCRUM and Kanban processes with a remote scrum master and a distributed development team",
-      "Created custom style framework for Scholar, a note-taking tool, focusing primarily on UX, along with general front-end development in angularjs and Sass.",
-      "Implemented redesign of EasyBib.com using Less.js, while restructuring legacy code for ease of use with Grunt.",
-      "Independently built new citation tool for ResearchReady.com from the ground up using Chaplin (framework built off of Backbone.js)",
-      "Collaborated with advertising team by building customizable WordPress site for marketing purposes"
+      "Developed multiple cloud-based tools for established education start-up using Agile/SCRUM and Kanban processes with a distributed development team",
+      "Created a custom style framework for Scholar, a note-taking tool, focusing primarily on UX and modularity",
+      "Implemented redesign of EasyBib.com using Less.js, while restructuring legacy code focusing on clarity and extensibility",
+      "Independently built new citation tool for ResearchReady.com from the ground up using <a href=\"http://chaplinjs.org/\" target=\"_blank\">Chaplin</a> and CoffeeScript",
+      "Collaborated with the marketing team to build a customizable WordPress site for press releases"
     ],
     "tags": [
       "AngularJS",
@@ -138,7 +139,8 @@
       "Kanban",
       "Agile",
       "Scrum",
-      "Git"
+      "Git",
+      "CoffeeScript"
     ],
     "url": "https://www.linkedin.com/company/imagine-easy-solutions-llc---easybib-com/"
   },
@@ -151,7 +153,7 @@
     "end": "2014-07-01",
     "details": [
       "Constructed complex WordPress \"magazine\"-style site with a variety of posts types and linked content",
-      "Improved and expanded basic designs, including the creation of a responsive mobile layout"
+      "Improved upon and expanded rough design outline, created the responsive mobile layout"
     ],
     "tags": ["WordPress", "design", "PHP", "JavaScript"],
     "url": "https://www.reductress.com"
@@ -166,11 +168,19 @@
     "details": [
       "Supported a team of four designers, focusing on multiple time-sensitive projects simultaneously",
       "Transformed Photoshop designs into fully functional websites",
-      "Converted Flash-based websites into HTML5",
+      "Converted many Flash-based experiences into HTML5 while maintaining support for older browsers, mainly IE 6",
       "Translated elaborate designs into websites for a variety of industries, including fashion, education and retail",
       "Completed an estimated four new high quality websites per month, while working under strict deadlines"
     ],
-    "tags": ["JavaScript", "Design", "jQuery", "HTML5", "WordPress", "PHP", "IE 6"],
+    "tags": [
+      "JavaScript",
+      "Design",
+      "jQuery",
+      "HTML5",
+      "WordPress",
+      "PHP",
+      "Internet Explorer 6"
+    ],
     "url": "https://www.linkedin.com/company/plenty-nyc/"
   }
 ]
