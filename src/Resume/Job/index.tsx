@@ -62,7 +62,7 @@ function Job({
       </h5>
       <ul className={styles.detail}>
         {details.map((detail, index) => (
-          <li key={index}>{detail}</li>
+          <li key={index} dangerouslySetInnerHTML={{__html: detail}} />
         ))}
       </ul>
       <div className={styles.tags}>
